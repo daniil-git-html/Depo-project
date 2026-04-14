@@ -623,3 +623,18 @@ h1, h2, h3, h4 {
     color: var(--ktzh-gray);
 }
 
+/* ===== ЗАЧЁРКНУТЫЙ ТЕКСТ ===== */
+.strikethrough {
+    text-decoration: line-through;
+    color: var(--ktzh-gray);
+}
+
+/* ===== ЭФФЕКТ ПРИ НАВЕДЕНИИ НА КАРТОЧКУ КУЗНЕЦОВА ===== */
+#emil-card {
+    transition: all 0.3s ease;
+}
+#emil-card:hover {
+    border-color: var(--ktzh-yellow);
+    background-color: #2A2E33;
+}
+
