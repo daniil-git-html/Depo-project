@@ -638,3 +638,18 @@ h1, h2, h3, h4 {
     background-color: #2A2E33;
 }
 
+/* ===== ЗАЧЁРКНУТЫЙ ТЕКСТ ===== */
+.strikethrough {
+    text-decoration: line-through;
+    color: var(--ktzh-gray);
+}
+
+/* ===== ЭФФЕКТ ПРИ НАВЕДЕНИИ НА КЛИКАБЕЛЬНЫЕ КАРТОЧКИ ===== */
+#almas-card, #emil-card {
+    transition: all 0.3s ease;
+}
+#almas-card:hover, #emil-card:hover {
+    border-color: var(--ktzh-yellow);
+    background-color: #2A2E33;
+}
+

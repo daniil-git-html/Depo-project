@@ -1,7 +1,6 @@
 // ===== ПЛАВНОЕ ПОЯВЛЕНИЕ БЛОКОВ ПРИ СКРОЛЛЕ =====
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Функция для анимации появления элементов
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -59,13 +58,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ===== ВОСПРОИЗВЕДЕНИЕ ЗВУКА ПРИ КЛИКЕ НА КАРТОЧКУ КУЗНЕЦОВА =====
+    // ===== ЗВУКИ ДЛЯ КАРТОЧЕК =====
+    // Дюсембаев Алмас -> коза
+    const almasCard = document.getElementById('almas-card');
+    if (almasCard) {
+        const goatAudio = new Audio('audio/goat-bleats.mp3');
+        almasCard.addEventListener('click', function() {
+            goatAudio.currentTime = 0;
+            goatAudio.play().catch(e => console.log('Звук козы не воспроизвелся:', e));
+        });
+    }
+
+    // Кузнецов Эмиль -> мельница (mill)
     const emilCard = document.getElementById('emil-card');
     if (emilCard) {
-        const audio = new Audio('audio/goat-bleats.mp3');
+        const millAudio = new Audio('audio/mill.mp3');
         emilCard.addEventListener('click', function() {
-            audio.currentTime = 0;
-            audio.play().catch(e => console.log('Не удалось воспроизвести звук:', e));
+            millAudio.currentTime = 0;
+            millAudio.play().catch(e => console.log('Звук мельницы не воспроизвелся:', e));
         });
     }
 
@@ -90,3 +100,4 @@ document.querySelectorAll('img').forEach(img => {
         this.style.objectFit = 'contain';
     });
 });
+
