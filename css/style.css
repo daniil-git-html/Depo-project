@@ -617,3 +617,9 @@ h1, h2, h3, h4 {
         grid-template-columns: 1fr;
     }
 }
+/* ===== ЗАЧЁРКНУТЫЙ ТЕКСТ ===== */
+.strikethrough {
+    text-decoration: line-through;
+    color: var(--ktzh-gray);
+}
+
