@@ -59,6 +59,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===== ЗВУКИ ДЛЯ КАРТОЧЕК =====
+    // Буйленков Даниил -> фирменный звук
+    const daniilCard = document.getElementById('daniil-card');
+    if (daniilCard) {
+        const daniilAudio = new Audio('audio/daniilcard.mp3');
+        daniilCard.addEventListener('click', function() {
+            daniilAudio.currentTime = 0;
+            daniilAudio.play().catch(e => console.log('Звук Даниила не воспроизвелся:', e));
+        });
+    }
+
     // Дюсембаев Алмас -> коза
     const almasCard = document.getElementById('almas-card');
     if (almasCard) {

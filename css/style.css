@@ -1,4 +1,17 @@
-/* ===== ПЕРЕМЕННЫЕ (СТИЛЬ ҚТЖ) ===== */
+/* ===== ЗАЧЁРКНУТЫЙ ТЕКСТ ===== */
+.strikethrough {
+    text-decoration: line-through;
+    color: var(--ktzh-gray);
+}
+
+/* ===== ЭФФЕКТ ПРИ НАВЕДЕНИИ НА КЛИКАБЕЛЬНЫЕ КАРТОЧКИ ===== */
+#daniil-card, #almas-card, #emil-card {
+    transition: all 0.3s ease;
+}
+#daniil-card:hover, #almas-card:hover, #emil-card:hover {
+    border-color: var(--ktzh-yellow);
+    background-color: #2A2E33;
+}/* ===== ПЕРЕМЕННЫЕ (СТИЛЬ ҚТЖ) ===== */
 :root {
     --ktzh-black: #0B0C0E;
     --ktzh-dark-grey: #16181B;
@@ -39,7 +52,7 @@ h1, h2, h3, h4 {
 
 .section-title {
     font-size: 32px;
-    margin-bottom: 40px;
+ p   margin-bottom: 40px;
     position: relative;
     display: inline-block;
 }
@@ -62,7 +75,7 @@ h1, h2, h3, h4 {
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: 16px 0;
+  0  padding: 16px 0;
 }
 
 .header__inner {
@@ -653,3 +666,17 @@ h1, h2, h3, h4 {
     background-color: #2A2E33;
 }
 
+/* ===== ЗАЧЁРКНУТЫЙ ТЕКСТ ===== */
+.strikethrough {
+    text-decoration: line-through;
+    color: var(--ktzh-gray);
+}
+
+/* ===== ЭФФЕКТ ПРИ НАВЕДЕНИИ НА КЛИКАБЕЛЬНЫЕ КАРТОЧКИ ===== */
+#daniil-card, #almas-card, #emil-card {
+    transition: all 0.3s ease;
+}
+#daniil-card:hover, #almas-card:hover, #emil-card:hover {
+    border-color: var(--ktzh-yellow);
+    background-color: #2A2E33;
+}
